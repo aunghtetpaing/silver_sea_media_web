@@ -1,0 +1,45 @@
+.bg-light {
+    background-color: #10652f !important;
+    color: #fff;
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+}
+
+.nav-item {
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-title {
+    margin-left: 10px;
+}
+
+.nav-item:hover {
+    background:#10a458;
+}
+
+.nav-link, .navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}

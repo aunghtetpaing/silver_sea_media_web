@@ -1,0 +1,8 @@
+<section class="row block-wrapper">
+    <div *ngFor="let menu of sideMenu">
+        <a class="block" (click)="navigate(menu.url)">
+            <img class="side-icon" src="../../../assets/images/icons/{{menu.icon}}" />
+            <label class="menu-label"> {{ menu.name }} </label>
+        </a>
+    </div>
+</section>

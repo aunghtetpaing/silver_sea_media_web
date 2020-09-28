@@ -1,0 +1,36 @@
+.block-wrapper {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0 5px -2px rgba(0,0,0,0.2);
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #10652f;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.block:hover {
+    transition: 0.5s;
+    background: #10a458;
+    text-decoration: none;
+}
+
+.side-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.menu-label {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: small;
+    color: #fff;
+}

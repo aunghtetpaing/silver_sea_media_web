@@ -1,0 +1,23 @@
+
+.buttons {
+    margin-top: 20px;
+    margin-right: 15px;
+    float: right;
+}
+
+.btn-lang {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    outline:none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+.btn-lang:focus,
+.btn-lang:hover {
+    transition: 0.1s;
+    opacity: 0.4;
+}

@@ -1,0 +1,14 @@
+.header-wrapper {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.header-wrapper:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+}
+.header-image {
+    width: 100%;
+    height: 300px;
+}
+

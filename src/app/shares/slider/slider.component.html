@@ -1,0 +1,9 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <section *ngFor="let slider of sliders; let i = index;">
+            <div class="carousel-item" [ngClass]="{'active': i === 0}">
+                <img  class="d-block w-100" [src]="slider.name" alt="silver sea media" title="silver sea media">
+            </div>
+        </section>
+    </div>
+  </div>

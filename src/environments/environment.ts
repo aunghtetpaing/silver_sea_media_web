@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://mmlfin.com',
+  api: 'https://webapi.mmlfin.com',
+  public: 'https://webapi.mmlfin.com/public/uploads',
+  encryptKey: 'welcomeinno$10000',
+  encText: 'Silver Sea Meda',
+  url: 'https://webapi.mmlfin.com',
+  default: {
+    image: 'photo-not-available.png'
+  }
 };
 
 /*

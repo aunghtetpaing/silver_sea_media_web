@@ -1,0 +1,41 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+<app-slider></app-slider>
+<app-language></app-language>
+<app-ads></app-ads>
+<app-loading *ngIf="isLoading"></app-loading>
+<section class="col-md-9" *ngIf="!isLoading">
+    <div class="post-row">
+        <div class="col-md-4 post-wrapper" *ngFor="let post of posts" (click)="navigate('articles/' + post.id)">
+            <div class="post">
+                <h3 class="post-title"> {{ post.title }}</h3>
+                <hr class="post-bar">
+                <img class="post-image" src="https://webapi.mmlfin.com/public/uploads/{{post.photo}}" alt="{{post.title}}"  alt="{{post.title}}" (error)="imageFailed(post)" />
+                <p class="post-description">{{ post.description }}</p>
+                <div class="post-footer">
+                    <div class="post-footer-row">
+                        <div class="post-date-wrapper">
+                            <div class="post-date">
+                                <label> Date - {{ post.post_date }}</label>
+                            </div>
+
+                            <div class="post-date">
+                                <label> {{ post.article_type }}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-row">
+        <div class="col-md-12">
+            <div class="btn-wrapper">
+                <button class="btn-pagination" *ngIf="skip > 0" (click)="changePage('back')"> Back </button>
+                <button class="btn-pagination" *ngIf="posts.length === limit" (click)="changePage('next')"> Next </button>
+            </div>
+        </div>
+    </div>
+</section>
+ 

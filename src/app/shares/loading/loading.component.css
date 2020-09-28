@@ -1,0 +1,19 @@
+.backdrop {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop > h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.spinner-border {
+    width: 100px;
+    height: 100px;
+}
