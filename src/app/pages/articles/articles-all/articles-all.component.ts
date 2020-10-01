@@ -21,14 +21,11 @@ export class ArticlesAllComponent implements OnInit {
     private activeRoute: ActivatedRoute,
     private router: Router,
     private api: ApiService
-  ) { 
-
-    console.log(this.activeRoute.snapshot.params.type);
-  }
+  ) { }
 
   async loadingData(): Promise<any> {
-    return await this.api.get(`posts?limit=${this.limit}&skip=${this.skip}&lang=${this.lang}&type=${this.activeRoute.snapshot.params.type}`).then((result) => {
-      this.posts = result.data;
+    return await this.api.get(`posts?app=web&limit=${this.limit}&skip=${this.skip}&lang=${this.lang}&type=${this.activeRoute.snapshot.params.type}`).then((result) => {
+      this.posts = result.data.list;
       this.isLoading = false;
       return null;
     }).catch((error) => {

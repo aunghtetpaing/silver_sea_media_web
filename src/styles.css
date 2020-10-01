@@ -29,3 +29,8 @@ body {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+
+
+img {
+    width: 100%;
+}

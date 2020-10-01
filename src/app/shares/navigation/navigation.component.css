@@ -1,3 +1,7 @@
+img {
+    width: inherit;
+}
+
 .bg-light {
     background-color: #10652f !important;
     color: #fff;

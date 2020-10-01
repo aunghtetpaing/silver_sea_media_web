@@ -1,22 +1,33 @@
-<app-loading *ngIf="isLoading"></app-loading>
+<app-navigation></app-navigation>
 
-<section class="row" *ngIf="!isLoading">
-    <div class="col-md-12 header">
-       <a [routerLink]="['/articles/all/' + article.article_type]"> View All {{ article.article_type }} </a>
+<div class="container-fluid">
+    <div class="row">
+        <app-ads></app-ads>
     </div>
+    
+    <app-loading *ngIf="isLoading"></app-loading>
 
-    <div class="col-md-12 article-wrapper">
-        <div class="article">
-            <h3> {{ article.title }} </h3>
-            <hr />
-            <div [innerHTML]="article.body"></div>
-            <hr />
-            <div class="tag">
-                <div class="tag-group">
-                    <label> Post Date - {{ article.post_date }}</label>
-                    <label> {{  article.article_type }} </label>
+    <div class="row">
+
+        <div class="col-md-9">
+            <div class="header">
+                <a [routerLink]="['/articles/all/' + article.article_type]"> View All {{ article.article_type }} </a>
+             </div>
+
+             <div class="article-wrapper">
+                <div class="article">
+                    <h3> {{ article.title }} </h3>
+                    <hr />
+                    <div [innerHTML]="article.body"></div>
+                    <hr />
+                    <div class="tag">
+                        <div class="tag-group">
+                            <label> Post Date - {{ article.post_date }}</label>
+                            <label> {{  article.article_type }} </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
