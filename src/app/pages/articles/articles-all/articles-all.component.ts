@@ -25,6 +25,7 @@ export class ArticlesAllComponent implements OnInit {
 
   async loadingData(): Promise<any> {
     return await this.api.get(`posts?app=web&limit=${this.limit}&skip=${this.skip}&lang=${this.lang}&type=${this.activeRoute.snapshot.params.type}`).then((result) => {
+      console.log(result);
       this.posts = result.data.list;
       this.isLoading = false;
       return null;
@@ -60,10 +61,10 @@ export class ArticlesAllComponent implements OnInit {
 
   ngOnInit() {
     this.loadingData();
-    this.activeRoute.params.subscribe((result) => {
-      this.isLoading = true;
-      return this.loadingData();
-    });
+    // this.activeRoute.params.subscribe((result) => {
+    //   this.isLoading = true;
+    //   return this.loadingData();
+    // });
   }
 
 }

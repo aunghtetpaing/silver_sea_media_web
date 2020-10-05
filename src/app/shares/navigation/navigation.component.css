@@ -14,17 +14,20 @@ img {
 
 .nav-item {
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
-
 
 .menu-icon {
     width: 30px;
     height: 30px;
 }
 
-.menu-title {
-    margin-left: 10px;
+.menu-title > label {
+    margin-bottom: 0px;
+}
+
+.nav-link > label {
+    margin-bottom: 0px;
 }
 
 .nav-item:hover {

@@ -13,6 +13,7 @@ export class NavigationComponent implements OnInit {
     { name: 'Fishery', icon: 'ship.png', url: '/articles/all/Fishery' },
     { name: 'International', icon: 'news.png', url: '/articles/all/International' },
     { name: 'Event', icon: 'events.png', url:  '/articles/all/Event' },
+    { name: 'Directory', icon: '', url: '/directory' },
     {
       name: 'Market Price',
       icon: 'market-price.png',

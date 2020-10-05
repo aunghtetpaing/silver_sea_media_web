@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { HomeModule } from './pages/home/home.module';
 import { SharesModule } from './shares/shares.module';
 import { RouterModule } from '@angular/router';
+import { HomeModule } from './pages/home/home.module';
+import { ArticlesModule } from './pages/articles/articles.module';
+import { DirectoryModule } from './pages/directory/directory.module';
 
+import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -29,8 +33,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     AppRoutingModule,
     HomeModule,
     RouterModule,
+    DirectoryModule,
+    ArticlesModule,
     SharesModule,
   ],
+  providers: [ CookieService ],
   bootstrap: [AppComponent]
 })
 

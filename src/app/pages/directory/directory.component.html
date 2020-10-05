@@ -1,0 +1,24 @@
+<section class="container-fluid">
+    <div class="row">
+        <app-navigation></app-navigation>
+    </div>
+
+    <div class="row">
+        <app-ads></app-ads>
+    </div>
+
+    <app-loading *ngIf="isLoading"></app-loading>
+    
+    <div class="row context">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let category of categoriesLists" (click)="navigate(category)">
+                    <div class="card">
+                        <h3> {{ category.name }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

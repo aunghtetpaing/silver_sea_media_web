@@ -1,0 +1,87 @@
+.category-title {
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+    border-left: 5px solid #10652f;
+}
+
+.form-inline {
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 5px solid #10652f;
+}
+
+.card-start {
+    width: 30%;
+    padding: 5px;
+}
+
+.card-start > img {
+    width: 100%;
+}
+
+.card-end {
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-end > label {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-end > label > span:last-child {
+    margin-left: 5px;
+}
+
+.card-end > .name {
+    font-weight: bold;
+}
+
+.view-more-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #10652f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.view-more-btn:hover {
+    transition: ease-in 0.5s;
+    background: #10a458;
+}
+
+.view-more-btn > label {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.badge {
+    padding: 5px;
+}

@@ -11,7 +11,7 @@ export class ApiService {
     private http: HttpClient,
   ) { }
 
-  async get(url: string): Promise<any> {
-    return await this.http.get(`${environment.api}/${url}`).toPromise();
+  async get(url: string, options?: any): Promise<any> {
+    return await this.http.get(`${environment.api}/${url}`, options ).toPromise();
   }
 }

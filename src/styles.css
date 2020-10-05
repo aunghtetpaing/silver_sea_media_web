@@ -5,6 +5,12 @@ body {
     font-family: 'Myanmar Sans Pro', sans-serif;
 }
 
+app-directory,
+app-directory-detail,
+app-navigation {
+    width: 100%;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
