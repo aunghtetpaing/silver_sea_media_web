@@ -10,6 +10,7 @@ import { LanguageComponent } from './language/language.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoadingComponent } from './loading/loading.component';
 import { AdsComponent } from './ads/ads.component';
+import { AdsSideComponent } from './ads-side/ads-side.component';
 
 const component = [
   LoadingComponent,
@@ -19,7 +20,8 @@ const component = [
   SidemenuComponent,
   LanguageComponent,
   FooterComponent,
-  AdsComponent
+  AdsComponent,
+  AdsSideComponent
 ]
 
 @NgModule({

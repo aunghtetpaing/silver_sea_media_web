@@ -1,15 +1,12 @@
 <app-navigation></app-navigation>
 
 <div class="container-fluid">
-    <div class="row">
-        <app-ads></app-ads>
-    </div>
-    
     <app-loading *ngIf="isLoading"></app-loading>
 
     <div class="row">
-
         <div class="col-md-9">
+            <app-ads *ngIf="!isLoading"></app-ads>
+            
             <div class="header">
                 <a [routerLink]="['/articles/all/' + article.article_type]"> View All {{ article.article_type }} </a>
              </div>
@@ -29,5 +26,11 @@
                 </div>
             </div>
         </div>
+
+        <section class="col-md-3">
+            <div class="row">
+                <app-ads-side *ngIf="!isLoading"></app-ads-side>
+            </div>
+        </section>
     </div>
 </div>

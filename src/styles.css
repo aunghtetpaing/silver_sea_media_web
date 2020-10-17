@@ -5,9 +5,14 @@ body {
     font-family: 'Myanmar Sans Pro', sans-serif;
 }
 
+app-article-detail,
+app-articles-all,
 app-directory,
 app-directory-detail,
-app-navigation {
+app-navigation,
+app-home,
+app-ads,
+app-ads-side {
     width: 100%;
 }
 

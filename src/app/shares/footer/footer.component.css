@@ -27,3 +27,8 @@
 .contact-info > p > span:last-child {
     margin-left: 10px;
 }
+
+.contact-info > p > a {
+    margin-left: 10px;
+    color: #fff
+}
